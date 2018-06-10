@@ -3,6 +3,8 @@ package com.designrknight.projectconfluence;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -26,7 +28,9 @@ public class Sign_in_activity extends AppCompatActivity {
         move_to_signup_page.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Sign_in_activity.this,Sign_up_activity.class));
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                        Sign_in_activity.this, move_to_signup_page,move_to_signup_page.getTransitionName());
+                startActivity(new Intent(Sign_in_activity.this,Sign_up_activity.class),options.toBundle());
             }
         });
     }

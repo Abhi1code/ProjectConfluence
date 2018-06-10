@@ -12,6 +12,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark_extra</item>
         <item name="colorAccent">@color/sign_in_up_colorAccent</item>
         <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentTransitions">true</item>
     </style>
 
     <style name="landing_page_theme" parent="Theme.AppCompat.NoActionBar">

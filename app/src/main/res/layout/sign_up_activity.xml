@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_constrain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Sign_up_activity">
@@ -32,6 +33,7 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/sign_in_up_changer_button_view"
         android:text="sign in"
+        android:transitionName="signin_trans"
         app:layout_constraintEnd_toStartOf="@+id/divider_bw"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -77,6 +79,7 @@
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:transitionName="signup_trans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -86,6 +89,8 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:scrollbars="none"
+        android:transitionName="signup_trans"
         app:layout_constraintBottom_toTopOf="@+id/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
